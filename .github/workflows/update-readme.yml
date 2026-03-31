@@ -64,7 +64,7 @@ jobs:
                   git add README.md
                   if git diff --cached --quiet; then
                       echo "README already up-to-date"
-                      exit 1
+                      exit 0
                   fi
                   git commit -m "docs: Updated to $LATEST_TAG"
                   git push
